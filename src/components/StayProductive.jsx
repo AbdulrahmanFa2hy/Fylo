@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import ArrowImg from "/src/assets/images/icon-arrow.svg";
-import StayProductiveImg from "/src/assets/images/illustration-stay-productive.png";
+import ArrowImg from "/assets/images/icon-arrow.svg";
+import StayProductiveImg from "/assets/images/illustration-stay-productive.png";
 function StayProductive() {
   return (
     <section>
