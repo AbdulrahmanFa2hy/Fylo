@@ -7,10 +7,10 @@ function Header() {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
         headerRef.current.style.background = "#0c1524";
-        headerRef.current.style.padding = "20px 0";
+        headerRef.current.style.padding = "18px 0";
       } else {
         headerRef.current.style.background = "transparent";
-        headerRef.current.style.padding = "60px 0";
+        headerRef.current.style.padding = "30px 0";
       }
     });
   }, []);
