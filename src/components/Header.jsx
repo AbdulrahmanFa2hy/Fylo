@@ -7,28 +7,28 @@ function Header() {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
         headerRef.current.style.background = "#0c1524";
-        headerRef.current.style.padding = "18px 0";
+        headerRef.current.style.padding = "0 0 20px";
       } else {
         headerRef.current.style.background = "transparent";
-        headerRef.current.style.padding = "30px 0";
+        headerRef.current.style.padding = "15px 0";
       }
     });
   }, []);
   return (
     <header
       ref={headerRef}
-      className="pt-[60px] fixed top-0 left-0 w-full z-50 transition-all duration-200"
+      className="fixed top-0 left-0 w-full z-50 transition-all duration-200"
     >
-      <div className="container flex justify-between items-center gap-[30px] sm:gap-0 flex-col sm:flex-row">
+      <div className="container flex flex-col justify-between items-center sm:flex-row">
         <Link to="/">
           <img
             src="/assets/images/logo.svg"
             alt="logo-img"
-            className="w-[175px] h-[66px] object-contain"
+            className="w-[80px] h-[80px] min-w-[80px] object-contain"
           />
         </Link>
         <nav>
-          <ul className="flex items-center gap-[50px] ">
+          <ul className="flex items-center gap-[40px] sm:gap-[30px] ">
             {links.map((link) => (
               <li key={link}>
                 <Link
