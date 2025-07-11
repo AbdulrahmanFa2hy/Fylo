@@ -24,10 +24,10 @@ function Header() {
           <img
             src="/assets/images/logo.svg"
             alt="logo-img"
-            className="w-[80px] h-[80px] min-w-[80px] object-contain"
+            className="w-[80px] min-w-[80px] object-contain pt-3 sm:pt-0"
           />
         </Link>
-        <nav>
+        <nav className="hidden sm:block">
           <ul className="flex items-center gap-[40px] sm:gap-[30px] ">
             {links.map((link) => (
               <li key={link}>
